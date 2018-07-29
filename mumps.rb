@@ -46,8 +46,8 @@ class Mumps < Formula
   end
   depends_on "metis"    => :optional if build.without? "mpi"
   depends_on "parmetis" => :optional if build.with? "mpi"
-  depends_on "scotch5"  => :optional
-  depends_on "scotch"   => :optional
+#   depends_on "scotch5"  => :optional
+#   depends_on "scotch"   => :optional
 
   resource "mumps_simple" do
     url "https://github.com/dpo/mumps_simple/archive/v0.4.tar.gz"
